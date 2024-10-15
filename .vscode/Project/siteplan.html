@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Fighter Chronicles</title> <!-- Website Name -->
+    <link rel="stylesheet" href="zfighter.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Z-Fighter Chronicles</h1> <!-- Website Name in Header -->
+    </div>
+    <nav class="navbar">
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('characters')">Characters</a>
+        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="section active">
+        <h2>Welcome to Z-Fighter Chronicles</h2>
+        <p>Your ultimate guide to the most powerful Z-Fighters in the Dragon Ball universe. Browse characters, check their power levels, and discover their signature moves.</p>
+    </section>
+
+    <!-- Characters Section (search + cards) -->
+    <section id="characters" class="section">
+        <div class="search-section">
+            
+    <section class="search-section">
+        <input type="text" id="searchBar" placeholder="Search for a character..." onkeyup="searchCharacter()">
+    </section>
+
+    <section id="characterGrid">
+        <!-- Character Cards Section -->
+        <div class="character-card">
+            <img src="path/to/goku.jpg" alt="Goku">
+            <h2>Goku</h2>
+            <p>Power Level: 9,000</p>
+            <p>Favorite Move: Kamehameha</p>
+        </div>
+        <div class="character-card">
+            <img src="path/to/vegeta.jpg" alt="Vegeta">
+            <h2>Vegeta</h2>
+            <p>Power Level: 8,800</p>
+            <p>Favorite Move: Final Flash</p>
+        </div>
+        <div class="character-card">
+            <img src="path/to/piccolo.jpg" alt="Piccolo">
+            <h2>Piccolo</h2>
+            <p>Power Level: 3,500</p>
+            <p>Favorite Move: Special Beam Cannon</p>
+        </div>
+        <div class="character-card">
+            <img src="path/to/gohan.jpg" alt="Gohan">
+            <h2>Gohan</h2>
+            <p>Power Level: 5,500</p>
+            <p>Favorite Move: Masenko</p>
+        </div>
+        <div class="character-card">
+            <img src="path/to/krillin.jpg" alt="Krillin">
+            <h2>Krillin</h2>
+            <p>Power Level: 2,000</p>
+            <p>Favorite Move: Destructo Disc</p>
+        </div>
+    
+        <!-- Second set of 5 characters -->
+        <div class="character-card">
+            <img src="path/to/trunks.jpg" alt="Trunks">
+            <h2>Trunks</h2>
+            <p>Power Level: 4,000</p>
+            <p>Favorite Move: Burning Attack</p>
+        </div>
+        <div class="character-card">
+            <img src="path/to/frieza.jpg" alt="Frieza">
+            <h2>Frieza</h2>
+            <p>Power Level: 10,000</p>
+            <p>Favorite Move: Death Beam</p>
+        </div>
+        <div class="character-card">
+            <img src="path/to/cell.jpg" alt="Cell">
+            <h2>Cell</h2>
+            <p>Power Level: 9,500</p>
+            <p>Favorite Move: Solar Kamehameha</p>
+        </div>
+        <div class="character-card">
+            <img src="path/to/majinbuu.jpg" alt="Majin Buu">
+            <h2>Majin Buu</h2>
+            <p>Power Level: 9,800</p>
+            <p>Favorite Move: Chocolate Beam</p>
+        </div>
+        <div class="character-card">
+            <img src="path/to/broly.jpg" alt="Broly">
+            <h2>Broly</h2>
+            <p>Power Level: 11,000</p>
+            <p>Favorite Move: Eraser Cannon</p>
+        </div>
+    </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Z-Fighter Chronicles</h2>
+        <p>Z-Fighter Chronicles is a fan-created website dedicated to providing information about the most iconic characters from Dragon Ball Z. Here, you can explore character profiles, learn about their power levels, and discover their signature moves. Whether you're a long-time fan or new to the world of Dragon Ball Z, this site has something for everyone!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© DJ Patrias 2024 Z-Fighter Chronicles</p>
+    <div id="lastModified"></div> <!-- Last modified date placeholder -->
+</footer>
+
+<script src="zfighter.js"></script>
+</body>
+</html>
